@@ -6,4 +6,5 @@ This project contains a collection of CloudNation Security workbooks for Azure. 
 The workbooks are inspired on several community workbooks with a CloudNation twist.
 
 Current Workbooks:
-- Defender for Cloud Health Assessment
+
+- [Defender for Cloud Health Assessment](https://github.com/CloudNationHQ/Security-Workbooks/blob/main/DfC%20Health%20Assessment/ReadMe.md)

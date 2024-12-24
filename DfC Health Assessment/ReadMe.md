@@ -1,6 +1,6 @@
 # Defender for Cloud Health Assessment workbook
 
-**Author: Erik Snijder | Principal Consultant Cloud Security [@CloudNation](https://www.cloudnation.nl/en/services/cloud-security)**
+**Author: Erik Snijder | Principal Consultant Cloud Security [@CloudNation](https://www.cloudnation.nl)**
 
 Microsoft Defender for Cloud is a cloud-native application protection platform (CNAPP) that is made up of security measures and practices that are designed to protect cloud-based applications from various cyber threats and vulnerabilities.  
 In order for Defender for Cloud to do it's magic it needs to configured accordingly. This workbook provides insights in the current configuration as well as coverage, costs and compliance. 
@@ -21,5 +21,4 @@ This workbook is divided into distinct sections, each focusing on a specific top
 ## Try on Portal
 You can deploy the workbook by clicking on the buttons below:
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Security-Center%2Fmaster%2FWorkbooks%2FRegulatory%2520Compliance%2FarmTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
-
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FCloudNationHQ%2FSecurity-Workbooks%2Frefs%2Fheads/main/DfC%20Health%20Assessment%2FarmTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
