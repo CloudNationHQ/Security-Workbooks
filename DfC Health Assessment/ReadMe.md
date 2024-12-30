@@ -17,6 +17,9 @@ This workbook is divided into distinct sections, each focusing on a specific top
 - Section 4: **Coverage** Provides insight in which Defender for Cloud Plans are enabled
 - Section 5: **Costs** Provides an estimation of the cost if the Defender for Cloud plans would be enabled
 - Section 6: **Regulatory Compliance** Provides insights in the compliancy per framework that is enabled 
+<br/>
+<br/>
+**Example**
 
 <img src='./images/workbook_Coverage.png' alt='Screenshot' width=80% />
 

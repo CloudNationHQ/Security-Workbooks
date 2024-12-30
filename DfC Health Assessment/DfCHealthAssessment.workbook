@@ -89,7 +89,7 @@
           {
             "type": 1,
             "content": {
-              "json": "### Section 1: List of scopes where the Microsoft Security Benchmark is assigned. Ideal it should be assigned on managementgroup level, as high as possible in the hierarchy."
+              "json": "### Section 1: List of scopes where the Microsoft Security Benchmark is assigned. Ideally it should be assigned on managementgroup level, as high as possible in the hierarchy.\r\n</br>\r\nmore info: https://learn.microsoft.com/en-us/azure/defender-for-cloud/update-regulatory-compliance-packages"
             },
             "conditionalVisibility": {
               "parameterName": "tab",
@@ -141,7 +141,7 @@
           {
             "type": 1,
             "content": {
-              "json": "### Section 2: Displays the Defender for Cloud overall Secure Score of groups of subscriptions. By default, it will load four groups; you select the subscriptions that represent a group."
+              "json": "### Section 2: Displays the Defender for Cloud overall Secure Score of groups of subscriptions. By default, it will load four groups; you select the subscriptions that represent a group.\r\n</br>\r\nMicrosoft want you to not use the secure score anymore, but for the alternative insight in your cloud security posture you need to have the CSPM plan enabled. \r\n</br>\r\nmore info: https://learn.microsoft.com/en-us/azure/defender-for-cloud/secure-score-security-controls"
             },
             "name": "text - 8"
           },
@@ -887,7 +887,7 @@
           {
             "type": 1,
             "content": {
-              "json": "### Section 3: Current recommendations"
+              "json": "### Section 3: Current recommendations\r\n</br>\r\nmore info: https://learn.microsoft.com/en-us/azure/defender-for-cloud/review-security-recommendations"
             },
             "name": "text - 20"
           },
@@ -985,7 +985,7 @@
           {
             "type": 1,
             "content": {
-              "json": "### Section 4: Defender plans coverage. Provides a consolidated view of coverage for Defender for Cloud plans and offerings across all selected subscriptions"
+              "json": "### Section 4: Defender plans coverage. Provides a consolidated view of coverage for Defender for Cloud plans and offerings across all selected subscriptions\r\n</br>\r\nmore info: https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction#protect-cloud-workloads"
             },
             "name": "text - 16"
           },
@@ -1990,7 +1990,7 @@
           {
             "type": 1,
             "content": {
-              "json": "### Section 5: Defender for Cloud cost. Insights in current costs and estimations when enabling additional features."
+              "json": "### Section 5: Defender for Cloud cost. Insights in current costs and estimations when enabling additional features.\r\n</br>\r\nIf a lot plans are enabled please also check the pre-purchase option for DfC: https://learn.microsoft.com/en-us/azure/defender-for-cloud/prepurchase-plan"
             },
             "name": "text - 19"
           },
@@ -4698,7 +4698,7 @@
           {
             "type": 1,
             "content": {
-              "json": "### Section 6: This section visualises the Regulatory Compliance standards and findings from Azure Defender."
+              "json": "### Section 6: This section visualises the Regulatory Compliance standards and findings from Azure Defender.\r\n</br>\r\nmore info: https://learn.microsoft.com/en-us/azure/defender-for-cloud/faq-regulatory-compliance"
             },
             "name": "text - 1"
           },
