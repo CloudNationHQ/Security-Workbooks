@@ -1,0 +1,57 @@
+{
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "workbookDisplayName": {
+        "type": "string",
+        "defaultValue": "Defender for Cloud disabled and exempted policies",
+        "metadata": {
+          "description": "This workbook provides an overview of all exempted or disabled recommendations (policies)"
+        }
+      },
+      "workbookType": {
+        "type": "string",
+        "defaultValue": "workbook",
+        "metadata": {
+          "description": "The gallery that the workbook will been shown under. Supported values include workbook, tsg, etc. Usually, this is 'workbook'"
+        }
+      },
+      "workbookSourceId": {
+        "type": "string",
+        "defaultValue": "Azure Monitor",
+        "metadata": {
+          "description": "The id of resource instance to which the workbook will be associated"
+        }
+      },
+      "workbookId": {
+        "type": "string",
+        "defaultValue": "[newGuid()]",
+        "metadata": {
+          "description": "The unique guid for this workbook instance"
+        }
+      }
+    },
+    "resources": [
+      {
+        "name": "[parameters('workbookId')]",
+        "type": "microsoft.insights/workbooks",
+        "location": "[resourceGroup().location]",
+        "apiVersion": "2022-04-01",
+        "dependsOn": [],
+        "kind": "shared",
+        "properties": {
+          "displayName": "[parameters('workbookDisplayName')]",
+          "serializedData": "{\"version\":\"Notebook/1.0\",\"items\":[{\"type\":1,\"content\":{\"json\":\"<br/>\\r\\n## Defender for Cloud disabled and exempted policies\\r\\n\\r\\nUse this report to get an overview of all disabled and exempted policies for Microsoft Security Benchmark. \\r\\n<br/>\\r\\n<br/>\"},\"customWidth\":\"75\",\"name\":\"text - 0\"},{\"type\":1,\"content\":{\"json\":\"<img src='https://www.cloudnation.nl/hubfs/Cloudnation_Knowshow_BLACK_BLUE_RGB.svg' alt='Cloudnation Logo' width='200' />\"},\"customWidth\":\"25\",\"name\":\"text - 2\"},{\"type\":3,\"content\":{\"version\":\"KqlItem/1.0\",\"query\":\"securityresources\\r\\n        | where type == \\\"microsoft.security/assessments\\\"\\r\\n        | extend source = tostring(properties.resourceDetails.Source)\\r\\n        | extend resourceId =\\r\\n            trim(\\\" \\\", tolower(tostring(case(source =~ \\\"azure\\\", properties.resourceDetails.Id,\\r\\n                                            source =~ \\\"aws\\\", properties.resourceDetails.AzureResourceId,\\r\\n                                            source =~ \\\"gcp\\\", properties.resourceDetails.AzureResourceId,\\r\\n                                            extract(\\\"^(.+)/providers/Microsoft.Security/assessments/.+$\\\",1,id)))))\\r\\n        | extend status = trim(\\\" \\\", tostring(properties.status.code))\\r\\n        | extend cause = trim(\\\" \\\", tostring(properties.status.cause))\\r\\n        | extend assessmentKey = tostring(name)\\r\\n        | where cause == \\\"Exempt\\\" or cause == \\\"OffByPolicy\\\"\\r\\n        | extend ResourceName = tostring(split(resourceId,'/')[8]), RecommendationName = tostring(properties.displayName), Source = properties.resourceDetails.Source, StatusCause = tostring(properties.status.cause), StatusDescription = properties.status.description, Severity = tostring(properties.metadata.severity)\\r\\n        | project RecommendationName, Severity, ResourceName, StatusCause, StatusDescription, resourceGroup, Source, subscriptionId\\r\\n        | sort by Severity, RecommendationName\",\"size\":2,\"queryType\":1,\"resourceType\":\"microsoft.resourcegraph/resources\",\"crossComponentResources\":[\"value::all\"],\"visualization\":\"table\",\"gridSettings\":{\"formatters\":[{\"columnMatch\":\"StatusCause\",\"formatter\":18,\"formatOptions\":{\"thresholdsOptions\":\"colors\",\"thresholdsGrid\":[{\"operator\":\"==\",\"thresholdValue\":\"OffByPolicy\",\"representation\":\"blue\",\"text\":\"{0}{1}\"},{\"operator\":\"==\",\"thresholdValue\":\"Exempt\",\"representation\":\"lightBlue\",\"text\":\"{0}{1}\"},{\"operator\":\"Default\",\"thresholdValue\":null,\"text\":\"{0}{1}\"}]}}],\"sortBy\":[{\"itemKey\":\"resourceGroup\",\"sortOrder\":1}]},\"sortBy\":[{\"itemKey\":\"resourceGroup\",\"sortOrder\":1}]},\"name\":\"query - 1\"}],\"isLocked\":false,\"fallbackResourceIds\":[\"Azure Monitor\"]}",
+          "version": "1.0",
+          "sourceId": "[parameters('workbookSourceId')]",
+          "category": "[parameters('workbookType')]"
+        }
+      }
+    ],
+    "outputs": {
+      "workbookId": {
+        "type": "string",
+        "value": "[resourceId( 'microsoft.insights/workbooks', parameters('workbookId'))]"
+      }
+    },
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#"
+  }

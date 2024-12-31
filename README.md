@@ -7,4 +7,5 @@ The workbooks are inspired on several community workbooks with a CloudNation twi
 
 Current Workbooks:
 
-- [Defender for Cloud Health Assessment](https://github.com/CloudNationHQ/Security-Workbooks/blob/main/DfC%20Health%20Assessment/ReadMe.md)
+- [Defender for Cloud Health Assessment workbook ](https://github.com/CloudNationHQ/Security-Workbooks/blob/main/DfC%20Health%20Assessment/ReadMe.md)
+- [Disabled and Exempted MCSB policies workbook](https://github.com/CloudNationHQ/Security-Workbooks/blob/main/Disabled%20and%20Exempt%20workbook/ReadMe.md)
