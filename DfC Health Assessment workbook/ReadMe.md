@@ -1,6 +1,6 @@
 # Defender for Cloud Health Assessment workbook
 
-**Author: Erik Snijder | Principal Consultant Cloud Security [@CloudNation](https://www.cloudnation.nl)**
+**Author: Erik Snijder | Principal Consultant Cloud Security [CloudNation](https://www.cloudnation.nl)**
 
 Microsoft Defender for Cloud is a cloud-native application protection platform (CNAPP) that is made up of security measures and practices that are designed to protect cloud-based applications from various cyber threats and vulnerabilities.  
 In order for Defender for Cloud to do it's magic it needs to configured accordingly. This workbook provides insights in the current configuration as well as coverage, costs and compliance. 
