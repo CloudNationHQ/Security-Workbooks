@@ -16,7 +16,7 @@ Current Workbooks:
 
 ## Authors
 
-Repository is maintained by [these awesome contributors](https://github.com/cloudnationhq/terraform-azure-sa/graphs/contributors).
+Repository is maintained by [these awesome contributors](https://github.com/cloudnationhq/Security-Workbooks/graphs/contributors).
 
 ## Contributing
 
@@ -26,4 +26,4 @@ For more information, please see our contribution [guidelines](./CONTRIBUTING.md
 
 ## License
 
-MIT Licensed. See [LICENSE](https://github.com/cloudnationhq/terraform-azure-sa/blob/main/LICENSE) for full details.
+MIT Licensed. See [LICENSE](https://github.com/cloudnationhq/Security-Workbooks/blob/main/LICENSE) for full details.

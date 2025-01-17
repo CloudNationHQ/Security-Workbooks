@@ -20,6 +20,4 @@ Follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/
 
 Once approved, multiple pull requests may be included in a release pull request. After this collective release PR is merged, a github release is generated.
 
-The new release will then be available in both the HashiCorp and OpenTofu registries, making it accessible for wider distribution and use.
-
 We look forward to your contributions.

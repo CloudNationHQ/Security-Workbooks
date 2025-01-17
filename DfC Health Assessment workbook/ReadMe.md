@@ -24,6 +24,7 @@ This workbook is divided into distinct sections, each focusing on a specific top
 <img src='./images/workbook_Coverage.png' alt='Screenshot' width=80% />
 
 ## Try on Portal
+
 You can deploy the workbook by clicking on the buttons below:
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FCloudNationHQ%2FSecurity-Workbooks%2Frefs%2Fheads/main/DfC%20Health%20Assessment%2FarmTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
