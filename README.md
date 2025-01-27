@@ -1,5 +1,7 @@
 # CloudNation Security Workbooks
 
+<img align="right" width="300" src='./images/Cloudnation_Knowshow_BLACK_BLUE_RGB.svg' alt='Cloudnation Logo'>
+
 **Author: Erik Snijder | Principal Consultant Cloud Security [CloudNation](https://www.cloudnation.nl)**
 
 This project contains a collection of CloudNation Security workbooks for Azure. These workbooks will provide you key insights in your current Azure security posture.
